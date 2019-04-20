@@ -1,0 +1,32 @@
+//*******************/
+// Colors
+/********************/
+/* si no funciona el Navbar revisar esta clase Navbar cambia de nombre menu */
+
+$colors: (
+    primary: #black,
+    textBlack: black,
+    bgPrincipal: black,
+    primary-light: lighten(#005DFF, 40%),
+    primary-dark: darken(#005DFF, 40%),
+    navColor: gray,
+    navlink: white,
+    navlinkHover:darken(red, 10%),
+    accent: #FFF6BB
+);
+$navColor: red;
+
+@function color($color-name) { 
+  @return map-get($colors, $color-name);
+}
+
+
+
+//*******************/
+// Break points
+/********************/
+$lg:       1240px;  //Desktop
+$md:        768px;  //Tablet
+$sm:        400px;  //Mobile
+
+

@@ -1,0 +1,723 @@
+html {
+    margin: 0px;
+    background-size: 110% 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: black;
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+     box-sizing: border-box;
+    /* A system font stack so things load nice and quick! */
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 400;
+ 
+     color:black;
+     letter-spacing: normal;
+
+
+}
+
+
+
+ *, *:before, *:after {
+     box-sizing: inherit;
+}
+ body {
+     margin: 0px;
+  
+ 
+}
+ h1, h2, h3, h4, h5, h6 {
+     margin: 0 0 5px 0;
+}.component, .component * {
+    box-sizing: content-box;
+  }
+ .testimonial.hideText {
+    height: 130px;
+}
+.testimonialWrap.hideText > a{
+    color: gray;
+}
+
+.testimonialWrap > a{
+    color: black;
+    display: flex;
+    align-items: center;
+    
+    text-decoration: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    background: none;
+    font-family: Georgia, serif;
+    
+    font-style: italic;
+ 
+    margin: 0;
+    position: relative;
+    text-shadow: 0 1px white;
+    z-index: 600;
+    margin-left: 30px!important;
+    width: 65%;
+}
+.testimonial > a {
+    height: auto;
+}
+
+.testimonialWrap > a::after {
+    content: '▲ Read Less';
+    width: 100%;
+    text-align: right;
+    color: gray;
+    top: 25px;
+    position: relative;
+}
+.testimonialWrap.hideText  > a::after {
+    content: '▼ Read More';
+    width: 100%;
+    text-align: right;
+}
+.firm {
+    margin-left: 155px!important;
+    margin-top: -20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: right;
+    display: flex;
+
+}
+
+
+.hideText p {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 45px;
+}
+.hideText .firm{
+    display: none;
+}
+
+
+.bgGray .container {
+    text-align: center;
+}
+ul.contacGruop{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style-type:none;
+}
+#cardContanct{
+    margin: auto;
+}
+.listItem{
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);  
+}
+/* Each item in our grid will contain numbers */
+.welcomeWrap .container{
+    /*flex*/
+     display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flexbox;
+    /* will work on IE10 */
+
+     display: flex;
+    /* is new syntax, will not work on IE10 */
+     -webkit-flex-wrap: wrap;
+     -ms-flex-flow: row wrap;
+     flex-wrap: wrap;
+     justify-content: center;
+     -ms-flex-pack: center;
+     align-content: center;
+     justify-content: center;
+     margin: auto;
+     max-width: 1200px;
+    width: 90%;
+}
+
+.logo {
+    background-image: url(../../images/casino-golden-affiliate.png);
+    width: 500px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    overflow: hidden;
+    text-indent: -2000px;
+    background-size: 80%;
+}
+
+#navbarSupportedContent a:hover {
+    background: red;
+    color: #fee300!Important;
+}
+.casinoBanner {
+    background-image: url(../../images/casinoAffiliateBanner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.carousel-caption {
+    max-width: 400px;
+    top: 20px;
+}
+.carousel-caption h1 {
+    color: red;
+}
+
+.carousel {
+    margin-bottom: inherit;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #dc3545;
+}
+
+
+.btn-secondary {
+	-moz-box-shadow: 0px 1px 0px 0px #c2561b;
+	-webkit-box-shadow: 0px 1px 0px 0px #c2561b;
+	box-shadow: 0px 1px 0px 0px #c2561b;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f39333), color-stop(1, #e46815));
+	background:-moz-linear-gradient(top, #f39333 5%, #e46815 100%);
+	background:-webkit-linear-gradient(top, #f39333 5%, #e46815 100%);
+	background:-o-linear-gradient(top, #f39333 5%, #e46815 100%);
+	background:-ms-linear-gradient(top, #f39333 5%, #e46815 100%);
+	background:linear-gradient(to bottom, #f39333 5%, #e46815 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f39333', endColorstr='#e46815',GradientType=0);
+	background-color:#f39333;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #fa7500;
+    height: 95px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 30px;
+    align-items: 0px 1px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #d16226;
+}
+.btn-secondary:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e46815), color-stop(1, #f39333));
+	background:-moz-linear-gradient(top, #e46815 5%, #f39333 100%);
+	background:-webkit-linear-gradient(top, #e46815 5%, #f39333 100%);
+	background:-o-linear-gradient(top, #e46815 5%, #f39333 100%);
+	background:-ms-linear-gradient(top, #e46815 5%, #f39333 100%);
+	background:linear-gradient(to bottom, #e46815 5%, #f39333 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e46815', endColorstr='#f39333',GradientType=0);
+	background-color:#e46815;
+}
+.btn-secondary:active {
+	position:relative;
+	top:1px;
+}
+.btnDown {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.btnDown .btn-secondary {
+    margin-top: 20px;
+}.btnDown p {
+    color: white;
+}
+.check1 {
+    width: 20px;
+    float: left;
+}
+
+form#joinForm {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.welcomeWrap {
+ 
+    background: #0f3963 url("../../images/bg-welcome-golden-affiliates.jpg") repeat fixed center; 
+    color: #0f3963;
+    background-repeat: repeat;
+    background-position: top center;
+
+}
+.welcome p {
+    font-size: 20px;
+}
+.welcome h2 {
+    color: white;
+    font-size: 65px;
+}
+
+.commission {
+    background: #172643 url("../../images/commision.jpg") no-repeat  center; background-size: cover;
+    color:  #0f3963;
+    background-position: top center;
+    padding: 20px 200px;
+    max-width: 100%;
+    width: 100%;
+}
+.commission p {
+    font-size: 25px;
+    line-height: 35px;
+}
+.commission h2 {
+    font-size: 55px;
+    color: yellow;
+    text-transform: uppercase;
+}
+
+.testimonials div {
+    font-size: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.testimonials h2 {
+    font-size: 50px;
+    margin-top: 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #0b2d52;
+    margin: 30px 0px;
+    text-align: center;
+}
+.testimonials .featurette-divider {
+    margin: 10px 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.divTextWrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 45%;
+    /* width: 100%; */
+}.rowTesti {
+    display: flex;
+    width: 100%;
+  
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.cicleLogo {
+    background: #3e5d95;
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+}
+
+
+.featurette-heading {
+    margin-top: 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #0b2d52;
+}
+p.circle {
+    background: #0f3964;
+    border-radius: 100%;
+    width: 167px;
+    height: 167px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.Icon_world{
+    background: #0f3963 url("../../images/Icon_world.png") no-repeat  center!important;
+}
+.Icon_bitcoin{
+    background: #0f3963 url("../../images/Icon_bitcoin.png") no-repeat  center!important;
+}
+.Icon_reports{
+    background: #0f3963 url("../../images/Icon_reports.png") no-repeat  center!important;
+}
+.Icon_marketing{
+    background: #0f3963 url("../../images/Icon_marketing.png") no-repeat  center!important;
+}
+.Icon_feeds{
+    background: #0f3963 url("../../images/Icon_feeds.png") no-repeat  center!important;
+}
+.Icon_dolars{
+    background: #0f3963 url("../../images/Icon_dolars.png") no-repeat  center!important;
+}
+
+
+.logos {
+    background: #212529;
+    margin-top: 50px;
+}
+
+.logos div {
+    text-align: center;
+}
+
+.featurette {
+    text-align: center;
+    margin-top: 40px;
+}
+.featurette p {
+    max-width: 1400px;
+    margin: auto;
+}
+.marketing h2 {
+    font-weight: 400;
+ 
+    text-align: center;
+    font-size: -webkit-xxx-large;
+}
+
+.container.marketing .row {
+    color: white;
+    max-width: 100%;
+    width: 100%;
+    margin: 30px 150px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 568px;
+    height: 334px;
+
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: auto;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+footer {
+    margin-top: 0px;
+    background: #0b2a4c;
+    color: white;
+    min-height: 237px;
+    position: relative;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 60px;
+    margin-top: 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    padding-top: 20px;
+}
+a.backtop {
+    position: absolute;
+    top:-80px;
+    width: 116px;
+    height: 116px;
+    overflow: hidden;
+    text-indent: -2000px;
+    background: url("../../images/top.png") no-repeat  center!important;
+    right: calc(50% - 58px);
+}
+p.privacy {
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: gray;
+}
+footer a {
+    background: #0b2a4c;
+    color: gray;
+}
+footer .logosWrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+    margin: auto;
+}
+
+button.navbar-toggler {
+    width: 90%;
+    height: 80px;
+    margin: 40px auto;
+}
+a.navbar-brand {
+    justify-content: center;
+    text-align: center;
+}
+#navbarSupportedContent a {
+    text-transform: uppercase;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+
+
+
+
+h3.col-lg-12.blue {
+    background: #0e2f52;
+    color: white;
+}
+.logosBar {
+    overflow: hidden;
+}
+
+#sideBar ul {
+    list-style-type: none;
+    }
+    #sideBar .text-center {
+        justify-content: center;
+    }
+
+    #sideBar ul li {
+        background: url('../../images/check.png') no-repeat left top;
+        height: 54px;
+        padding-left: 44px;
+        padding-top: 3px;
+        font-size: 17px;
+        font-weight: 700;
+        }
+
+        .bgGray {
+            background: #f7f7f7;
+        }
+     
+        div#sideBar {
+            background: url("../../images/sideBar-bg.jpg") left top;
+            background-repeat: repeat-y;
+            background-color: #f7f7f7;
+            width: 35%;
+            overflow: hidden;
+        }
+
+        .bgWhite{
+            width: 65%;
+            background: white;
+        }
+.mobile{
+    display: none;
+}
+
+
+#sideBar ul {
+    display: grid;
+}
+#sideBar ul li {
+
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: initial;
+}
+
+div#navbarSupportedContent .navbar-nav{
+    width: 100%;
+}
+.hide{
+    display: none;
+}
+
+
+.join .bgWhite .container {
+ 
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.join .bgWhite .container h2 {
+    width: 100%;
+    text-align: center;
+}
+span.style1 {
+    position: relative;
+    top: -30px;
+    left: -20px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1140px) {
+  
+
+}
+
+@media (max-width:1250px) {
+
+
+}
+
+@media (max-width:1024px) {
+    .mobile{
+        display: initial;
+    }
+    .desktop{
+        display: none;
+    }
+
+.logos img {
+    width: 100%;
+}
+.logo {
+    background-size: contain;
+    width: 100%;
+}
+.testimonials h2, .welcome h2, .commission h2, .featurette-heading, footer h2 {
+    font-size: 2rem; text-align: center;
+}
+.btn-secondary {
+    font-size: inherit;
+}
+.formWrap img {
+    width: 100%;
+}
+
+
+p.backtop {
+    right: calc(50% - 58px);
+}
+
+#sideBar ul {
+    list-style-type: none;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#sideBar ul li {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 60%;
+}
+
+.hide{
+    display: none;
+}
+}
+
+@media (max-width:1134px) {
+       ul.navbar-nav.mr-auto {
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width:855px) {
+    #navbarSupportedContent a {
+        text-transform: uppercase;
+        height: inherit;
+}
+.bgWhite {
+    width: 100%;
+}
+div#sideBar {
+    width: 100%;
+}
+.gaLogo, .iconLogo {
+    width: 50%;
+    float: left;
+}
+.whyWrap {
+    width: 100%;
+}
+}
+
+ @media (max-width:768px) {
+ 
+
+}
+
+
+ @media (max-width:600px) {
+    footer .logosWrap {
+        max-width: inherit;
+    }
+
+    nav.menuPrincipal {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .navbar-light .navbar-toggler {
+        width: 100%;
+        margin: 10px;
+    }
+    
+    .testimonialWrap .hideText {
+      height: auto;
+    }
+
+}
